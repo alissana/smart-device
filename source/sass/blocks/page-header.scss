@@ -4,6 +4,14 @@
   display: flex;
   justify-content: space-between;
   padding: 33px 0;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 20px 0;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding: 17px 0;
+  }
 }
 
 .page-header__contacts {
@@ -12,12 +20,16 @@
 }
 
 .page-header__contacts-link {
+  align-items: center;
   color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   font-family: "PT Mono", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  min-height: 14px;
+  margin-left: 88px;
   position: relative;
   text-decoration: none;
 
@@ -26,41 +38,49 @@
     opacity: 0.8;
   }
 
-  &--email {
-    margin-right: 122px;
+  @media (max-width: $tablet-width-max) {
+    margin-left: 32px;
+  }
 
-    &::before {
-      content: "";
-      background-image: url("../img/envelope.svg");
-      height: 14px;
-      width: 19px;
-      position: absolute;
-      left: -40px;
-      top: 50%;
-      transform: translate(0, -50%);
+  @media (max-width: $mobile-width-max) {
+    margin-left: 23px;
+  }
 
-      @media (max-width: $tablet-width-max) {
-        left: 90px;
-      }
+  &::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 20px;
+    flex-shrink: 0;
+
+    @media (max-width: $tablet-width-max) {
+      margin-right: 0;
     }
   }
 
-  &--phone {
-    margin-right: 48px;
+  &--email::before {
+    background-image: url("../img/envelope.svg");
+    background-size: 19px 14px;
+    height: 14px;
+    width: 19px;
 
-    &::before {
-      content: "";
-      background-image: url("../img/phone-call.svg");
-      height: 18px;
-      width: 18px;
-      position: absolute;
-      left: -34px;
-      top: 50%;
-      transform: translate(0, -50%);
+    @media (max-width: $tablet-width-max) {
+      background-size: 24px 19px;
+      height: 19px;
+      width: 24px;
+    }
+  }
 
-      @media (max-width: $tablet-width-max) {
-        left: 15px;
-      }
+  &--phone::before {
+    background-image: url("../img/phone-call.svg");
+    background-size: 18px 18px;
+    height: 18px;
+    width: 18px;
+
+    @media (max-width: $tablet-width-max) {
+      background-size: 24px 24px;
+      height: 24px;
+      width: 24px;
     }
   }
 }
@@ -79,12 +99,14 @@
   font-size: 14px;
   text-align: center;
   letter-spacing: 0.05em;
+  margin-left: 46px;
   padding: 14px 27px;
   text-transform: uppercase;
 
   &:hover,
   &:focus {
-    opacity: 0.8;
+    background-color: #00b2ff;
+    border-color: #00b2ff;
   }
 
   @media (max-width: $tablet-width-max) {

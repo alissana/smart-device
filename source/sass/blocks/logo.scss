@@ -5,10 +5,15 @@
 
 .logo__img {
   margin-right: 16px;
+
+  @media (max-width: $mobile-width-max) {
+    height: 38px;
+    width: 38px;
+  }
 }
 
 .logo__text {
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width-max) {
     display: none;
   }
 }
