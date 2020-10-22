@@ -3,8 +3,8 @@
   font-display: swap;
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-regular.woff2") format("woff2"),
-    url("../fonts/roboto-regular.woff") format("woff");
+  src: url("../fonts/roboto-c-regular.woff2") format("woff2"),
+    url("../fonts/roboto-c-regular.woff") format("woff");
 }
 
 @font-face {
@@ -12,6 +12,33 @@
   font-display: swap;
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/roboto-bold.woff2") format("woff2"),
-    url("../fonts/roboto-bold.woff") format("woff");
+  src: url("../fonts/roboto-c-bold.woff2") format("woff2"),
+    url("../fonts/roboto-c-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-medium.woff2") format("woff2"),
+    url("../fonts/roboto-medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Mono";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptmono.woff2") format("woff2"),
+    url("../../fonts/ptmono.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Mono";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptmonobold.woff2") format("woff2"),
+    url("../../fonts/ptmonobold.woff") format("woff");
 }
