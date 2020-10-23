@@ -23,7 +23,6 @@
   align-items: center;
   color: #ffffff;
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   font-family: "PT Mono", sans-serif;
   font-style: normal;
@@ -92,6 +91,8 @@
 }
 
 .page-header__button {
+  background-color: transparent;
+  border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
