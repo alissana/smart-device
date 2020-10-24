@@ -13,6 +13,9 @@
   <link rel="preload" href="fonts/ptmonobold.woff2" as="font" crossorigin="anonymous">
 </head>
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
   <div class="wrapper">
     <div class="intro">
       <div class="container">
@@ -40,54 +43,66 @@
         </header>
         <main class="page-main">
           <div class="banner">
-            <div class="banner-text">
-              <h1 class="banner-title">Печатные платы</h1>
-              <p class="banner-description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-              <a href="#" class="banner-link button">
-                <span class="banner-link-text">Получить бесплатную консультацию</span>
-                <span class="banner-link-text banner-link-text--mobile">Бесплатная консультация</span>
+            <div class="banner__text">
+              <h1 class="banner__title">Печатные платы</h1>
+              <p class="banner__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+              <a href="#" class="banner__link button">
+                <span class="banner__link-text">Получить бесплатную консультацию</span>
+                <span class="banner__link-text banner__link-text--mobile">Бесплатная консультация</span>
               </a>
             </div>
-            <div class="banner-img">
+            <div class="banner__img">
               <img src="img/banner-plata.png" width="705" height="515" alt="Печатные платы">
             </div>
-            <div class="banner-scroll">
-              <a href="#own_advantages" class="banner-scroll__text">Скролл вниз</a>
+            <div class="banner__scroll">
+              <a href="#own_advantages" class="banner__scroll__text">Скролл вниз</a>
             </div>
           </div>
         </div>
       </div>
       <section id="own_advantages" class="advantages">
-        <ul class="advantages-list">
-          <li class="advantages-item">
-            <h3 class="advantages-title advantages-title--time">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <svg class="advantages__icon advantages__icon--time" height="35" width="29" viewBox="0 0 29 35">
+              <use xlink:href="#icon-stopwatch"></use>
+            </svg>
+            <h3 class="advantages__title">
               Оперативные сроки
             </h3>
-            <p class="advantages-description">
-              Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки
+            <p class="advantages__description">
+              Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки.
             </p>
           </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title advantages-title--suppliers">
+          <li class="advantages__item">
+            <svg class="advantages__icon advantages__icon--suppliers" height="35" width="35" viewBox="0 0 35 35">
+              <use xlink:href="#icon-hired"></use>
+            </svg>
+            <h3 class="advantages__title">
               Крупные поставщики
             </h3>
-            <p class="advantages-description">
+            <p class="advantages__description">
               Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспичивает хорошее качество нашей продукции.
             </p>
           </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title advantages-title--confidentiality">
+          <li class="advantages__item">
+            <svg class="advantages__icon advantages__icon--confidentiality" height="31" width="36" viewBox="0 0 36 31">
+              <use xlink:href="#icon-detective"></use>
+            </svg>
+            <h3 class="advantages__title">
               Полная конфиденциальность
             </h3>
-            <p class="advantages-description">
+            <p class="advantages__description">
               По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфеденциальность.
             </p>
           </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title advantages-title--personalization">
+          <li class="advantages__item">
+            <svg class="advantages__icon advantages__icon--personalization" height="35" width="35" viewBox="0 0 35 35">
+              <use xlink:href="#icon-tag"></use>
+            </svg>
+            <h3 class="advantages__title">
               Персонализация стоимости
             </h3>
-            <p class="advantages-description">
+            <p class="advantages__description">
               Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.
             </p>
           </li>
