@@ -5,13 +5,26 @@
   position: relative;
 
   @media (max-width: $tablet-width-max) {
-    padding-left: 60px;
+    overflow: hidden;
+    padding-left: 75px;
     padding-top: 56px;
+    margin: 0 -15px;
   }
 
   @media (max-width: $mobile-width-max) {
     flex-direction: column;
-    padding-left: 0;
+    margin: 0 -15px;
+    padding-left: 15px;
+  }
+}
+
+.banner__text {
+  @media (max-width: $tablet-width-max) {
+    max-width: 550px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-right: 15px;
   }
 }
 
@@ -24,6 +37,7 @@
   letter-spacing: 0.07em;
   margin-top: 58px;
   margin-bottom: 26px;
+  margin-left: -5px;
   text-transform: uppercase;
 
   @media (max-width: $tablet-width-max) {
@@ -77,16 +91,22 @@
 
 }
 
-.banner__link {
+.banner__button {
   background-color: #00b2ff;
   border-color: transparent;
   display: block;
   font-size: 16px;
-  margin-bottom: 278px;
+  margin-bottom: 276px;
   margin-left: 94px;
-  padding: 15px 43px;
+  padding: 16px 43px;
   text-decoration: none;
   max-width: 407px;
+
+  &:hover,
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
 
   @media (max-width: $tablet-width-max) {
     margin-bottom: 163px;
@@ -103,7 +123,7 @@
   }
 }
 
-.banner__link-text {
+.banner__button-text {
   color: #ffffff;
 
   @media (max-width: $mobile-width-max) {
@@ -120,8 +140,13 @@
 }
 
 .banner__img {
+  margin-right: -76px;
+  min-width: 465px;
+
   @media (max-width: $mobile-width-max) {
     margin-top: -34px;
+    max-width: 500px;
+    min-width: 320px;
     order: -1;
     padding-left: 14px;
   }

@@ -1,5 +1,5 @@
 .advantages {
-  padding: 110px 20%;
+  padding: 110px 15%;
 
   @media (max-width: $tablet-width-max) {
     padding: 54px 25px;
@@ -26,7 +26,8 @@
   border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
   margin-bottom: 30px;
-  padding: 40px 45px 30px 45px;
+  min-height: 300px;
+  padding: 40px 45px 65px 45px;
   width: calc((100% - 30px)/2);
 
   &:nth-child(2n+1) {
@@ -46,6 +47,10 @@
     background-color: #00b2ff;
   }
 
+  @media (max-width: $tablet-width-max) {
+    padding: 24px 24px;
+  }
+
   @media (max-width: $mobile-width-max) {
     width: 100%;
   }
@@ -59,8 +64,15 @@
   font-size: 24px;
   line-height: 34px;
   margin: 0;
+  margin-bottom: 16px;
   padding: 0;
   position: relative;
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
 }
 
 .advantages__description {
@@ -70,9 +82,15 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages__icon {
   fill: #00b2ff;
   margin-bottom: 16px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 8px;
+  }
 }
