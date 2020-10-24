@@ -1,0 +1,93 @@
+.company {
+  margin-top: 76px;
+  padding-left: 185px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../img/company-img.png");
+    background-size: 115px 305px;
+    height: 305px;
+    width: 115px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+
+    @media (max-width: $tablet-width-max) {
+      background-size: 131px 347px;
+      height: 347px;
+      width: 131px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-left: 0;
+  }
+}
+
+.company__title {
+  color: #666666;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.company__description {
+  color: #666666;
+  font-family: "PT Mono", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  &--desktop {
+    @media (max-width: $tablet-width-max) {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    display: none;
+
+    @media (max-width: $tablet-width-max) {
+      display: block;
+    }
+  }
+}
+
+.company__link {
+  border: 1px solid #00b2ff;
+  color: #00b2ff;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 20px;
+  padding: 13px 49px;
+  text-decoration: none;
+  vertical-align: top;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #00b2ff;
+    border-color: #00b2ff;
+    color: #ffffff;
+  }
+}
