@@ -2,6 +2,7 @@
   margin-top: 76px;
   padding-left: 185px;
   position: relative;
+  margin-bottom: 50px;
 
   &::before {
     content: "";
@@ -65,9 +66,17 @@
 
   &--mobile {
     display: none;
+    position: relative;
 
-    @media (max-width: $tablet-width-max) {
-      display: block;
+    @media (max-width: $mobile-width-max) {
+      display: inline;
+
+      &::after {
+        content: "..";
+        position: absolute;
+        right: -10px;
+        bottom: -2px;
+      }
     }
   }
 }
@@ -89,5 +98,9 @@
     background-color: #00b2ff;
     border-color: #00b2ff;
     color: #ffffff;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 10px;
   }
 }
