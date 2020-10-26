@@ -2,4 +2,15 @@
   background-image: url("../img/banner.png");
   background-color: #1b2d37;
   min-width: 320px;
+
+  &--main {
+    background-color: #ffffff;
+    background-image: url("../img/background-triangle.png");
+    background-size: 100%;
+  }
+
+  &--goods {
+    background-color: #1b2d37;
+    background-image: none;
+  }
 }
