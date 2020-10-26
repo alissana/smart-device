@@ -1,0 +1,48 @@
+.footer-nav {
+  width: 38%;
+}
+
+.footer-nav__title {
+  color: #1b2d37;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.footer-nav__list {
+  @include no-list;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer-nav__item {
+  width: calc((100%-65px)/2);
+}
+
+.footer-nav__item-link {
+  color: #1b2d37;
+  text-decoration: none;
+  font-family: "PT Mono", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+}
+

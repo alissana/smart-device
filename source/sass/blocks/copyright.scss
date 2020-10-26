@@ -1,0 +1,41 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &::before {
+    content: "";
+    border-top: 1px solid #626962;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.copyright__item {
+  color: #1b2d37;
+  font-family: "PT Mono", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.copyright__item-link {
+  color: #1b2d37;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+}
