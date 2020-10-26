@@ -4,6 +4,10 @@
   justify-content: space-between;
   margin-top: 54px;
   width: 112px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 0;
+  }
 }
 
 .social__item {

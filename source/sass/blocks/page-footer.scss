@@ -4,4 +4,51 @@
   justify-content: space-between;
   padding: 65px 0;
   width: 100%;
+
+  @media (max-width: $tablet-width-max) {
+    flex-direction: column;
+    padding: 65px 0 38px;
+  }
+}
+
+.page-footer__left-column {
+  width: 30%;
+
+  @media (max-width: $tablet-width-max) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+    position: relative;
+    width: 100%;
+
+    &::before {
+      content: "";
+      border-bottom: 1px solid #626962;
+      opacity: 0.2;
+      position: absolute;
+      bottom: -26px;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.page-footer__date {
+  display: none;
+
+  @media (max-width: $tablet-width-max) {
+    display: block;
+  }
+}
+
+.page-footer__wrapper-tablet {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 38px;
+    width: 100%;
+  }
 }

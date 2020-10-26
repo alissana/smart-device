@@ -12,6 +12,10 @@
     left: 0;
     width: 100%;
   }
+
+  @media (max-width: $tablet-width-max) {
+    padding: 30px 0;
+  }
 }
 
 .copyright__item {
@@ -24,6 +28,16 @@
   letter-spacing: 0.04em;
   opacity: 0.5;
   text-transform: uppercase;
+
+  @media (max-width: $tablet-width-max) {
+    &--rights {
+      display: none;
+    }
+
+    &--date {
+      display: none;
+    }
+  }
 }
 
 .copyright__item-link {

@@ -1,5 +1,9 @@
 .footer-nav {
-  width: 38%;
+  width: 50%;
+
+  @media (max-width: $tablet-width-max) {
+    width: 60%;
+  }
 }
 
 .footer-nav__title {
@@ -23,7 +27,11 @@
 }
 
 .footer-nav__item {
-  width: calc((100%-65px)/2);
+  width: 50%;
+
+  @media (max-width: $tablet-width-max) {
+    width: 100%;
+  }
 }
 
 .footer-nav__item-link {
