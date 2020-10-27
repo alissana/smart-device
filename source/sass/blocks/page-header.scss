@@ -90,7 +90,7 @@
   }
 }
 
-.page-header__button {
+.page-header__link {
   background-color: transparent;
   border: 1px solid #ffffff;
   color: #ffffff;
@@ -102,6 +102,7 @@
   letter-spacing: 0.05em;
   margin-left: 46px;
   padding: 14px 27px;
+  text-decoration: none;
   text-transform: uppercase;
 
   &:hover,

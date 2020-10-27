@@ -21,11 +21,14 @@
       <header class="page-header">
         <a class="page-header__logo logo">
           <div class="logo__img">
-            <img src="img/logo-circuit.png" width="52" height="52" alt="Логотип Smart Device">
+            <svg height="52" width="52" viewBox="0 0 52 52">
+              <use xlink:href="#icon-logo-circuit"></use>
+            </svg>
           </div>
           <div class="logo__text">
-            <div class="logo__brand">Smart Device</div>
-            <div class="logo__tagline">умные технологии</div>
+            <svg height="45" width="134" viewBox="0 0 134 45">
+              <use xlink:href="#icon-logo-name-header"></use>
+            </svg>
           </div>
         </a>
         <div class="page-header__contacts">
@@ -35,9 +38,9 @@
           <a class="page-header__contacts-link page-header__contacts-link--phone" href="tel:+74950005252">
             <span class="page-header__contacts-text">+7&nbsp;(495)&nbsp;000&nbsp;52&nbsp;52</span>
           </a>
-          <button class="page-header__button button" type="button">
+          <a class="page-header__link button" href="#">
             <span>Заказать звонок</span>
-          </button>
+          </a>
         </div>
       </header>
       <div class="banner">
@@ -62,7 +65,7 @@
     <div class="intro intro--main">
       <div class="wrapper">
         <section class="advantages" id="own_advantages">
-          <h2 class="visually-hidden">Наши преимущества</h2>
+          <h3 class="visually-hidden">Наши преимущества</h3>
           <ul class="advantages__list">
             <li class="advantages__item">
               <svg class="advantages__icon advantages__icon--time" height="35" width="29" viewBox="0 0 29 35">
@@ -118,7 +121,7 @@
             Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.
           </p>
           <p class="company__description">
-            Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных <span class="company__description--mobile">Дорог&nbsp;</span><span class="company__description--desktop">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
+            Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных <span class="company__text-mobile">Дорог&nbsp;</span><span class="company__text-desktop">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
           </p>
           <a href="#" class="company__link button">
             Подробнее
@@ -164,15 +167,18 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__left-column">
           <a class="page-footer__logo logo">
-            <div class="logo__img">
-              <img src="img/logo-circuit.png" width="52" height="52" alt="Логотип Smart Device">
+            <div class="logo__img logo__img--footer">
+              <svg height="52" width="52" viewBox="0 0 52 52">
+                <use xlink:href="#icon-logo-circuit"></use>
+              </svg>
             </div>
-            <div class="logo__text">
-              <div class="logo__brand logo__brand--footer">Smart Device</div>
-              <div class="logo__tagline">умные технологии</div>
+            <div class="logo__text logo__text--footer">
+              <svg height="45" width="134" viewBox="0 0 134 45">
+                <use xlink:href="#icon-logo-name"></use>
+              </svg>
             </div>
           </a>
-          <p class="page-footer__date copyright__item">
+          <p class="page-footer__date">
             1999-2018 SD Service Devices
           </p>
           <div class="page-footer__social social">
@@ -206,8 +212,8 @@
         </div>
         <div class="page-footer__wrapper-tablet">
           <div class="page-footer__nav footer-nav">
-            <h4 class="footer-nav__title">Разделы сайта</h4>
-            <ul class="footer-nav__list">
+            <h4 class="footer-nav__title accordion">Разделы сайта</h4>
+            <ul class="footer-nav__list accordion-panel">
               <li class="footer-nav__item">
                 <a class="footer-nav__item-link" href="#">О компании</a>
               </li>
@@ -232,10 +238,8 @@
             </ul>
           </div>
           <div class="page-footer__contacts contacts">
-            <h4 class="contacts__title">
-              Наш офис
-            </h4>
-            <div class="contacts__description">
+            <h4 class="contacts__title accordion">Наш офис</h4>
+            <div class="contacts__description accordion-panel">
               <p class="contacts__description-item">г. Мытищи, Олимпийский проспект, д.10</p>
               <p class="contacts__description-item">+7&nbsp;(495)&nbsp;589-40-50</p>
               <p class="contacts__description-item">+7&nbsp;(925)&nbsp;003-87-67</p>
@@ -262,5 +266,6 @@
       </div>
     </footer>
   </div>
+  <script src="js/accordion.js"></script>
 </body>
 </html>

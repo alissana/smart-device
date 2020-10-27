@@ -1,0 +1,36 @@
+.accordion {
+  @media (max-width: $mobile-width-max) {
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      content: '';
+      background-image: url("../img/icon-plus.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
+
+.active {
+  &::after {
+    background-image: url("../img/icon-minus.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 1px;
+      width: 16px;
+  }
+}
+
+.accordion-panel {
+  @media (max-width: $mobile-width-max) {
+    display: none;
+    overflow: hidden;
+  }
+}

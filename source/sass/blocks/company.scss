@@ -59,26 +59,26 @@
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+}
 
-  &--desktop {
-    @media (max-width: $tablet-width-max) {
-      display: none;
-    }
-  }
-
-  &--mobile {
+.company__text-desktop {
+  @media (max-width: $tablet-width-max) {
     display: none;
-    position: relative;
+  }
+}
 
-    @media (max-width: $mobile-width-max) {
-      display: inline;
+.company__text-mobile {
+  display: none;
+  position: relative;
 
-      &::after {
-        content: "..";
-        position: absolute;
-        right: -10px;
-        bottom: -2px;
-      }
+  @media (max-width: $tablet-width-max) {
+    display: inline;
+
+    &::after {
+      content: "..";
+      position: absolute;
+      right: -10px;
+      bottom: -2px;
     }
   }
 }

@@ -2,12 +2,16 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 65px 0;
+  padding: 65px 0 60px;
   width: 100%;
 
   @media (max-width: $tablet-width-max) {
     flex-direction: column;
-    padding: 65px 0 38px;
+    padding: 20px 0 38px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding: 48px 0 16px;
   }
 }
 
@@ -18,19 +22,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 26px;
-    position: relative;
+    margin-bottom: 20px;
     width: 100%;
+  }
 
-    &::before {
-      content: "";
-      border-bottom: 1px solid #626962;
-      opacity: 0.2;
-      position: absolute;
-      bottom: -26px;
-      left: 0;
-      width: 100%;
-    }
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
   }
 }
 
@@ -40,15 +37,72 @@
   @media (max-width: $tablet-width-max) {
     display: block;
   }
+
+  @media (max-width: $mobile-width-max) {
+    margin: 0;
+    margin-bottom: 31px;
+    margin-top: 20px;
+    padding: 0;
+  }
+}
+
+.page-footer__date {
+  color: #1b2d37;
+  font-family: "PT Mono", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  opacity: 0.5;
+  text-transform: uppercase;
 }
 
 .page-footer__wrapper-tablet {
   display: flex;
   justify-content: space-between;
+  position: relative;
   width: 70%;
 
   @media (max-width: $tablet-width-max) {
     margin-top: 38px;
     width: 100%;
+
+    &::before {
+      content: "";
+      border-top: 1px solid #626962;
+      opacity: 0.2;
+      position: absolute;
+      top: -38px;
+      left: -25px;
+      width: calc(100% + 50px);
+    }
+
+    &::after {
+      content: "";
+      border-top: 1px solid #626962;
+      opacity: 0.2;
+      position: absolute;
+      bottom: -36px;
+      left: -25px;
+      width: calc(100% + 50px);
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    margin-top: 58px;
+
+    &::before {
+      top: -30px;
+      left: -15px;
+      width: calc(100% + 30px);
+    }
+
+    &::after {
+      bottom: 0;
+      left: -15px;
+      width: calc(100% + 30px);
+    }
   }
 }
