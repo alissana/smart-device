@@ -2,10 +2,11 @@
 function documentReady() {
   var link = document.querySelector('.page-header__link');
   var popup = document.querySelector('.modal');
+  var popupOverlay = document.querySelector('.bg');
   var close = popup.querySelector('.form__close-button');
   var form = popup.querySelector('.modal-form');
-  var name = popup.querySelector('[name=yourname]');
-  var phone = popup.querySelector('[name=yourphone]');
+  var name = popup.querySelector('[name=your-name]');
+  var phone = popup.querySelector('[name=your-phone]');
   var question = popup.querySelector('[name=yourquestion]');
 
   var isStorageSupport = true;
@@ -19,6 +20,7 @@ function documentReady() {
 
   link.addEventListener('click', function (evt) {
     evt.preventDefault();
+    popupOverlay.classList.add('bg--show');
     popup.classList.add('modal-show');
     if (storage) {
       name.value = storage;
@@ -32,6 +34,7 @@ function documentReady() {
 
   close.addEventListener('click', function (evt) {
     evt.preventDefault();
+    popupOverlay.classList.remove('bg--show');
     popup.classList.remove('modal-show');
     popup.classList.remove('modal-error');
   });
