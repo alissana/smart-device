@@ -1,8 +1,6 @@
 .goods__title {
   color: #ffffff;
-  font-family: "Roboto Condensed", Arial, Tahoma, sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-family: $font-roboto;
   font-size: 36px;
   line-height: 51px;
   margin: 0;
@@ -37,7 +35,7 @@
   margin-right: 30px;
   min-height: 620px;
   position: relative;
-  width: calc((100% - 30px)/3);
+  width: calc((100% - 30px) / 3);
 
   &:last-child {
     margin-right: 0;
@@ -110,8 +108,7 @@
 .goods h4 {
   color: #FFFFFF;
   display: block;
-  font-family: "Roboto Condensed", Arial, Tahoma, sans-serif;
-  font-style: normal;
+  font-family: $font-roboto;
   font-weight: normal;
   font-size: 20px;
   height: 100%;

@@ -9,8 +9,7 @@
 
 .questions h3 {
   color: #ffffff;
-  font-family: "Roboto Condensed", Arial, Tahoma, sans-serif;
-  font-style: normal;
+  font-family: $font-roboto;
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
@@ -31,9 +30,6 @@
 
 .questions p {
   color: #ffffff;
-  font-family: "PT Mono", "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   margin: 0;

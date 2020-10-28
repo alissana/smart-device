@@ -48,9 +48,6 @@
 
 .page-footer__date {
   color: #1b2d37;
-  font-family: "PT Mono", "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
@@ -68,7 +65,8 @@
     margin-top: 38px;
     width: 100%;
 
-    &::before {
+    &::before,
+    &::after {
       content: "";
       border-top: 1px solid #626962;
       opacity: 0.2;
@@ -79,13 +77,8 @@
     }
 
     &::after {
-      content: "";
-      border-top: 1px solid #626962;
-      opacity: 0.2;
-      position: absolute;
+      top: auto;
       bottom: -36px;
-      left: -25px;
-      width: calc(100% + 50px);
     }
   }
 
@@ -93,16 +86,16 @@
     flex-direction: column;
     margin-top: 58px;
 
-    &::before {
+    &::before,
+    &::after {
       top: -30px;
       left: -15px;
       width: calc(100% + 30px);
     }
 
     &::after {
+      top: auto;
       bottom: 0;
-      left: -15px;
-      width: calc(100% + 30px);
     }
   }
 }

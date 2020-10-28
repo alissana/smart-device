@@ -1,8 +1,9 @@
 'use strict';
+
 function documentReady() {
   var link = document.querySelector('.page-header__link');
   var popup = document.querySelector('.modal');
-  var popupOverlay = document.querySelector('.bg');
+  var popupOverlay = document.querySelector('.modal-overlay');
   var close = popup.querySelector('.form__close-button');
   var form = popup.querySelector('.modal-form');
   var name = popup.querySelector('[name=your-name]');
@@ -20,7 +21,7 @@ function documentReady() {
 
   link.addEventListener('click', function (evt) {
     evt.preventDefault();
-    popupOverlay.classList.add('bg--show');
+    popupOverlay.classList.add('modal-overlay--show');
     popup.classList.add('modal-show');
     if (storage) {
       name.value = storage;
@@ -34,7 +35,7 @@ function documentReady() {
 
   close.addEventListener('click', function (evt) {
     evt.preventDefault();
-    popupOverlay.classList.remove('bg--show');
+    popupOverlay.classList.remove('modal-overlay--show');
     popup.classList.remove('modal-show');
     popup.classList.remove('modal-error');
   });
@@ -56,7 +57,7 @@ function documentReady() {
     if (evt.keyCode === 27) {
       if (popup.classList.contains('modal-show')) {
         evt.preventDefault();
-        popupOverlay.classList.remove('bg--show');
+        popupOverlay.classList.remove('modal-overlay--show');
         popup.classList.remove('modal-show');
         popup.classList.remove('modal-error');
       }

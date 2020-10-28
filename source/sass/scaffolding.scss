@@ -8,6 +8,14 @@ html {
   box-sizing: border-box;
 }
 
+html,
+body {
+  font-family: $font-pt;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
 img {
   display: block;
   max-width: 100%;

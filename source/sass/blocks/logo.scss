@@ -20,7 +20,6 @@
 }
 
 .logo__text {
-
   @media (max-width: $mobile-width-max) {
     display: none;
   }
@@ -28,29 +27,4 @@
   &--footer {
     display: block;
   }
-}
-
-.logo__brand {
-  color: #ffffff;
-  font-family: "Roboto Condensed", Arial, Tahoma, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  margin: 0;
-  line-height: 29px;
-  padding: 0;
-
-  &--footer {
-    color: #203c42;
-  }
-}
-
-.logo__tagline {
-  color: #788891;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  margin: 0;
-  padding: 0;
 }

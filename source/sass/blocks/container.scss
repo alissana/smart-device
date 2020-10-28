@@ -4,6 +4,10 @@
   min-width: 320px;
   padding: 0 15px;
 
+  &--narrow {
+    max-width: 1200px;
+  }
+
   @media (max-width: $tablet-width-max) {
     padding: 0 25px;
   }

@@ -14,17 +14,15 @@
       width: 16px;
     }
   }
-}
 
-.active {
-  &::after {
+  &.active::after {
     background-image: url("../img/icon-minus.svg");
-      background-repeat: no-repeat;
-      position: absolute;
-      right: 0;
-      top: 0;
-      height: 1px;
-      width: 16px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 1px;
+    width: 16px;
   }
 }
 

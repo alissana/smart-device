@@ -15,8 +15,7 @@
 
 .contacts__title {
   color: #1b2d37;
-  font-family: "Roboto Condensed", Arial, Tahoma, sans-serif;
-  font-style: normal;
+  font-family: $font-roboto;
   font-weight: normal;
   font-size: 15px;
   letter-spacing: 0.05em;
@@ -43,10 +42,6 @@
 
 .contacts__description {
   color: #1b2d37;
-  text-decoration: none;
-  font-family: "PT Mono", "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
   line-height: 25px;
   opacity: 0.5;
