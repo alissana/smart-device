@@ -1,6 +1,6 @@
 .intro {
-  background-image: url("../img/banner.png");
   background-color: #1b2d37;
+  background-image: url("../img/banner.png");
   min-width: 320px;
   overflow: hidden;
 
@@ -13,5 +13,12 @@
   &--goods {
     background-color: #1b2d37;
     background-image: none;
+  }
+
+  &--questions {
+    background-color: #00b2ff;
+    background-image: url("../img/bg-questions.png");
+    background-position: 50% 50%;
+    background-size: cover;
   }
 }

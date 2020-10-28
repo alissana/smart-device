@@ -1,0 +1,130 @@
+.form__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__contacts-wrapper {
+  width: calc(50% - 15px);
+}
+
+.form__contacts-wrapper label{
+  display: none;
+}
+
+input,
+textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #ffffff;
+  margin-bottom: 40px;
+  padding: 14px 16px;
+  width: 100%;
+
+  &:focus,
+  :active {
+   border: none;
+   outline: none;
+  }
+}
+
+::placeholder {
+  color: #ffffff;
+  font-family: "PT Mono", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  &:focus,
+  :active {
+    display: none;
+  }
+}
+
+.form__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form__button {
+  width: calc(50% - 15px);
+}
+
+button {
+  @include no-btn;
+  border:1px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding: 14px 18px;
+  text-transform: uppercase;
+  width: 100%;
+
+  &:hover,
+  :focus {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #00b2ff;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.form__note {
+  display: flex;
+  justify-content: flex-start;
+  width: calc(50% - 15px);
+}
+
+.form__note input {
+  width: 16px;
+}
+
+.form__note label {
+  &::before {
+    content: "";
+    border: 1px solid #ffffff;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  background-image: url("../img/icon-checkbox-ckecked.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border: 1px solid #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.form__note label {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "PT Mono", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 32px;
+  position: relative;
+}
