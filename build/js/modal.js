@@ -4,7 +4,7 @@ function documentReady() {
   var link = document.querySelector('.page-header__link');
   var popup = document.querySelector('.modal');
   var popupOverlay = document.querySelector('.modal-overlay');
-  var close = popup.querySelector('.form__close-button');
+  var close = popup.querySelector('.modal__close-button');
   var form = popup.querySelector('.modal-form');
   var name = popup.querySelector('[name=your-name]');
   var phone = popup.querySelector('[name=your-phone]');

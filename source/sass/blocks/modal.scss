@@ -17,11 +17,13 @@
 
 .modal__close-button {
   @include no-btn;
+
   background-image: url("../img/icon-button-close.svg");
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
   height: 17px;
+  outline: none;
   position: absolute;
   right: 20px;
   top: 20px;
