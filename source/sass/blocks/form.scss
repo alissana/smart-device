@@ -23,7 +23,7 @@
   }
 }
 
-.form__contacts-wrapper label{
+.form__contacts-wrapper label {
   display: none;
 }
 
@@ -32,14 +32,27 @@ textarea {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   color: #ffffff;
+  font-family: "PT Mono", "Courier New", Courier, monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
   padding: 16px 16px;
   resize: none;
   width: 100%;
 
   &:focus,
-  :active {
+  &:active {
    border: none;
    outline: none;
+  }
+
+  &::placeholder {
+    color: #ffffff;
+
+    &:focus,
+    :active {
+      display: none;
+    }
   }
 }
 
@@ -49,20 +62,6 @@ input {
 
 textarea {
   margin-bottom: 36px;
-}
-
-::placeholder {
-  color: #ffffff;
-  font-family: "PT Mono", "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-
-  &:focus,
-  :active {
-    display: none;
-  }
 }
 
 .form__button-wrapper {
@@ -95,7 +94,7 @@ textarea {
 
 button {
   @include no-btn;
-  border:1px solid #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   color: #ffffff;
   font-family: "Roboto Condensed", Arial, Tahoma, sans-serif;

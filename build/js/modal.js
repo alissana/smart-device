@@ -56,6 +56,7 @@ function documentReady() {
     if (evt.keyCode === 27) {
       if (popup.classList.contains('modal-show')) {
         evt.preventDefault();
+        popupOverlay.classList.remove('bg--show');
         popup.classList.remove('modal-show');
         popup.classList.remove('modal-error');
       }
