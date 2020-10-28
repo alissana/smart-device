@@ -1,34 +1,53 @@
 .questions {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $tablet-width-max) {
+    justify-content: center;
+  }
 }
 
-.questions__left-column {
-  background-image: url("../img/airplane.png");
-  background-repeat: no-repeat;
-  width: 50%;
-}
-
-.questions__right-column h3 {
+.questions h3 {
   color: #ffffff;
-  font-family: "Roboto Condensed",sans-serif;
+  font-family: "Roboto Condensed", Arial, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   padding: 0;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 28px;
+    line-height: 39px;
+  }
 }
 
-.questions__right-column p {
+.questions p {
   color: #ffffff;
-  font-family: PT Mono;
+  font-family: "PT Mono", "Courier New", Courier, monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   margin: 0;
-  margin-bottom: 48px;
+  margin-bottom: 50px;
   padding: 0;
+}
+
+.questions__left-column {
+  margin-left: -180px;
+  margin-bottom: -20px;
+  min-width: 665px;
+  width: 50%;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
 }

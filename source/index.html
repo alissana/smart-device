@@ -47,7 +47,7 @@
         <div class="banner__text">
           <h1 class="banner__title">Печатные платы</h1>
           <p class="banner__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a href="#" class="banner__link button">
+          <a href="#questions-form" class="banner__link button">
             <span class="banner__link-text">Получить бесплатную консультацию</span>
             <span class="banner__link-text banner__link-text--mobile">Бесплатная консультация</span>
           </a>
@@ -145,10 +145,12 @@
         </section>
       </div>
     </div>
-    <div class="intro intro--questions">
+    <div class="intro intro--questions" id="questions-form">
       <div class="wrapper wrapper--questions">
         <section class="questions">
-          <div class="questions__left-column"></div>
+          <div class="questions__left-column">
+            <img src="img/airplane.png" width="665" height="487" alt="Бумажный самолетик">
+          </div>
           <div class="questions__right-column">
             <h3>Остались вопросы? Задайте их нам!</h3>
             <p>Мы проконсультируем Вас бесплатно</p>
@@ -160,11 +162,11 @@
                 </div>
                 <div class="form__contacts-wrapper">
                   <label for="form-phone">Телефон</label>
-                  <input type="tel" name="your-phone" id="form-phone" pattern="[7-8]{1}[0-9]{10}" placeholder="Телефон" required>
+                  <input type="tel" name="your-phone" id="form-phone" pattern="+7({3})-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон" required>
                 </div>
               </div>
               <div class="form__question">
-                <textarea name="your-question" id="question-comment" placeholder="Ваш вопрос" rows="5" required></textarea>
+                <textarea name="your-question" id="question-comment" placeholder="Ваш вопрос" rows="7" required></textarea>
               </div>
               <div class="form__button-wrapper">
                 <div class="form__button">
@@ -285,6 +287,40 @@
       </div>
     </footer>
   </div>
+  <section class="questions modal">
+    <h3>Закажите звонок</h3>
+    <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+    <form class="questions__form form modal-form" action="#" method="post">
+      <div class="form__contacts form__contacts--modal">
+        <div class="form__contacts-wrapper form__contacts-wrapper--modal">
+          <label for="form-name">Имя<sup>*</sup>:</label>
+          <input type="text" name="yourname" id="form-name" placeholder="Имя" required>
+        </div>
+        <div class="form__contacts-wrapper form__contacts-wrapper--modal">
+          <label for="form-phone">Телефон</label>
+          <input type="tel" name="yourphone" id="form-phone" pattern="+7({3})-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон" required>
+        </div>
+      </div>
+      <div class="form__question">
+        <textarea name="yourquestion" id="questioncomment" placeholder="Ваш вопрос" rows="7" required></textarea>
+      </div>
+      <div class="form__button-wrapper form__button-wrapper--modal">
+        <div class="form__button form__button--modal">
+          <button type="submit">Отправить</button>
+        </div>
+        <div class="form__note form__note--modal">
+          <input type="checkbox" id="consent" required>
+          <label for="consent">Я согласен на обработку персональных данных</label>
+        </div>
+      </div>
+      <button class="form__close-button modal__close-button" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </form>
+  </section>
+  <div class="bg"></div>
   <script src="js/accordion.js"></script>
+  <script src="js/phone-mask.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 </html>

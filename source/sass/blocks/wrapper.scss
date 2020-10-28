@@ -10,7 +10,7 @@
   }
 
   &--goods {
-    padding: 88px 15.2% 130px;
+    padding: 88px 15.2% 128px;
 
     @media (max-width: $tablet-width-max) {
       padding: 50px 25px 32px;
@@ -22,6 +22,14 @@
   }
 
   &--questions {
-    padding: 96px 15.2% 113px;
+    padding: 92px 15.2% 113px;
+
+    @media (max-width: $tablet-width-max) {
+      padding: 85px 92px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      padding: 30px 14px;
+    }
   }
 }
