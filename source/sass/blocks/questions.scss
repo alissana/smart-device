@@ -1,4 +1,21 @@
 .questions {
+  background-color: #00b2ff;
+  background-image: url("../img/bg-questions.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  padding: 92px 0;
+
+  @media (max-width: $tablet-width-max) {
+    background-image: none;
+    padding: 85px 0;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding: 30px 0;
+  }
+}
+
+.questions__content {
   display: flex;
   justify-content: space-between;
 
@@ -39,7 +56,6 @@
 
 .questions__left-column {
   margin-left: -180px;
-  margin-bottom: -20px;
   min-width: 665px;
   width: 50%;
 

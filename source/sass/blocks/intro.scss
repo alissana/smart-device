@@ -11,20 +11,4 @@
 
     padding: 110px 0;
   }
-
-  &--goods {
-    background-color: #1b2d37;
-    background-image: none;
-  }
-
-  &--questions {
-    background-color: #00b2ff;
-    background-image: url("../img/bg-questions.png");
-    background-position: 50% 50%;
-    background-size: cover;
-
-    @media (max-width: $tablet-width-max) {
-      background-image: none;
-    }
-  }
 }

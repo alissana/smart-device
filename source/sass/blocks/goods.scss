@@ -1,3 +1,18 @@
+.goods {
+  background-color: #1b2d37;
+  background-image: none;
+
+  padding: 88px 0 128px;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 50px 0 32px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding: 50px 0 35px;
+  }
+}
+
 .goods__title {
   color: #ffffff;
   font-family: $font-roboto;
