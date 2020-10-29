@@ -1,7 +1,6 @@
 .goods {
   background-color: #1b2d37;
   background-image: none;
-
   padding: 88px 0 128px;
 
   @media (max-width: $tablet-width-max) {
@@ -16,6 +15,7 @@
 .goods__title {
   color: #ffffff;
   font-family: $font-roboto;
+  font-weight: normal;
   font-size: 36px;
   line-height: 51px;
   margin: 0;
@@ -37,6 +37,7 @@
 .goods__list {
   @include no-list;
   display: flex;
+  flex-wrap: wrap;
 
   @media (max-width: $tablet-width-max) {
     flex-direction: column;
@@ -50,7 +51,7 @@
   margin-right: 30px;
   min-height: 620px;
   position: relative;
-  width: calc((100% - 30px) / 3);
+  width: 370px;
 
   &:last-child {
     margin-right: 0;

@@ -1,8 +1,7 @@
 .company {
-  padding-left: 185px;
+  padding-left: 180px;
   position: relative;
   margin-top: 76px;
-  margin-bottom: 50px;
 
   &::before {
     content: "";
@@ -11,8 +10,8 @@
     height: 305px;
     width: 115px;
     position: absolute;
-    left: 5px;
-    top: 10px;
+    left: 0;
+    top: 12px;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/company-img-desktop@2x.png");
