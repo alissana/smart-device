@@ -1,6 +1,7 @@
 .intro {
   background-color: #1b2d37;
   background-image: url("../img/bg-banner-desktop@1x.png");
+  background-repeat: no-repeat;
   background-size: cover;
   min-width: 320px;
   overflow: hidden;
@@ -37,6 +38,7 @@
 
     @media (max-width: $tablet-width-max) {
       background-image: url("../img/bg-triangle-tablet@1x.png");
+      padding: 54px 0;
 
       @media (min-resolution: $retina-dppx) {
         background-image: url("../img/bg-triangle-tablet@2x.png");

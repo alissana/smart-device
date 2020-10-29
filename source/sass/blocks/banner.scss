@@ -2,29 +2,34 @@
   display: flex;
   justify-content: flex-start;
   margin-right: -15px;
+  min-height: 760px;
   padding-top: 140px;
   position: relative;
 
   @media (max-width: $tablet-width-max) {
     overflow: hidden;
-    padding-left: 75px;
-    padding-top: 56px;
+    min-height: 604px;
+    padding: 0;
     margin: 0 -25px;
   }
 
   @media (max-width: $mobile-width-max) {
     flex-direction: column;
     margin: 0 -15px;
+    min-height: 576px;
     padding-left: 15px;
   }
 }
 
 .banner__text {
   @media (max-width: $tablet-width-max) {
+    padding-left: 88px;
+    padding-top: 108px;
     max-width: 550px;
   }
 
   @media (max-width: $mobile-width-max) {
+    padding: 0;
     padding-right: 15px;
     margin-top: -20px;
   }
@@ -43,6 +48,8 @@
 
   @media (max-width: $tablet-width-max) {
     font-size: 60px;
+    margin: 0;
+    margin-bottom: 30px;
   }
 
   @media (max-width: $mobile-width-max) {
@@ -67,19 +74,21 @@
     border-bottom: 2px solid #ffffff;
     display: block;
     position: absolute;
-    top: 15px;
+    top: 18px;
     left: -94px;
     width: 66px;
 
     @media (max-width: $tablet-width-max) {
-      width: 33px;
       left: -50px;
+      top: 15px;
+      width: 33px;
     }
   }
 
   @media (max-width: $tablet-width-max) {
     font-size: 18px;
     line-height: 28px;
+    margin-bottom: 54px;
     margin-left: 52px;
   }
 
@@ -95,8 +104,6 @@
   border-color: transparent;
   display: block;
   font-size: 16px;
-  // Подумать как лучше (убрать padding в banner нижний, а этот margin убрать)
-  margin-bottom: 276px;
   margin-left: 94px;
   max-width: 407px;
   padding: 16px 43px 20px;
@@ -109,17 +116,15 @@
   }
 
   @media (max-width: $tablet-width-max) {
-    margin-bottom: 163px;
     margin-left: 52px;
-    min-width: 408px;
-    padding: 15px 21px;
+    width: 378px;
+    padding: 18px 21px;
   }
 
   @media (max-width: $mobile-width-max) {
     display: block;
-    margin-left: 0;
-    margin-bottom: 70px;
-    min-width: 287px;
+    margin: 0;
+    width: 287px;
     padding: 19px 21px;
   }
 }
@@ -145,13 +150,16 @@
   min-width: 465px;
 
   @media (max-width: $tablet-width-max) {
-    margin-left: -76px;
+    margin-left: -62px;
+    min-width: 518px;
   }
 
   @media (max-width: $mobile-width-max) {
     margin: 0;
-    margin-top: -36px;
+    max-width: 446px;
     min-width: 311px;
+    padding-left: 14px;
+    padding-top: 18px;
     order: -1;
     padding-left: 14px;
   }
