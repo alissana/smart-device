@@ -94,13 +94,22 @@
     }
   }
 
-  input {
+input {
     margin-bottom: 40px;
+
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 32px;
+    }
   }
 
-  textarea {
+textarea {
     margin-bottom: 36px;
     resize: none;
+
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 28px;
+      max-height: 104px;
+    }
   }
 
   button {
@@ -143,14 +152,18 @@
     line-height: 16px;
     padding-left: 40px;
     position: relative;
+
+    @media (max-width: $mobile-width-max) {
+      padding-left: 34px;
+    }
   }
 
   input[type="checkbox"] + label::before {
     content: "";
     border: 1px solid #ffffff;
     position: absolute;
-    left: 8px;
-    top: 4px;
+    left: 0;
+    top: 0;
     width: 16px;
     height: 16px;
   }

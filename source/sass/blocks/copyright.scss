@@ -55,6 +55,10 @@
 
   &--confidentialy {
     margin-right: 404px;
+
+    @media (max-width: $tablet-width-max) {
+      margin-right: 0;
+    }
   }
 }
 

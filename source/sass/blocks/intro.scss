@@ -45,6 +45,7 @@
 
     @media (max-width: $mobile-width-max) {
       background-image: url("../img/bg-triangle-mobile@1x.png");
+      padding: 37px 0;
 
       @media (min-resolution: $retina-dppx) {
         background-image: url("../img/bg-triangle-mobile@2x.png");
