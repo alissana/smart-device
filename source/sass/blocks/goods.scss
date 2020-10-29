@@ -85,26 +85,74 @@
   }
 
   &--plats {
-    background-image: url("../img/goods-plats.png");
+    background-image: url("../img/goods-plats-desktop@1x.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/goods-plats-desktop@2x.png");
+    }
 
     @media (max-width: $tablet-width-max) {
-      background-image: url("../img/goods-plats-tablet@2x.png");
+      background-image: url("../img/goods-plats-tablet@1x.png");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/goods-plats-tablet@2x.png");
+      }
+    }
+
+    @media (max-width: $mobile-width-max) {
+      background-image: url("../img/goods-plats-mobile@1x.png");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/goods-plats-mobile@2x.png");
+      }
     }
   }
 
   &--installation {
-    background-image: url("../img/goods-installation.png");
+    background-image: url("../img/goods-installation-desktop@1x.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/goods-installation-desktop@2x.png");
+    }
 
     @media (max-width: $tablet-width-max) {
-      background-image: url("../img/goods-installation-tablet@2x.png");
+      background-image: url("../img/goods-installation-tablet@1x.png");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/goods-installation-tablet@2x.png");
+      }
+    }
+
+    @media (max-width: $mobile-width-max) {
+      background-image: url("../img/goods-installation-mobile@1x.png");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/goods-installation-mobile@2x.png");
+      }
     }
   }
 
   &--accessories {
-    background-image: url("../img/goods-accessories.png");
+    background-image: url("../img/goods-accessories-desktop@1x.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/goods-accessories-desktop@2x.png");
+    }
 
     @media (max-width: $tablet-width-max) {
-      background-image: url("../img/goods-accessories-tablet@2x.png");
+      background-image: url("../img/goods-accessories-tablet@1x.png");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/goods-accessories-tablet@2x.png");
+      }
+    }
+
+    @media (max-width: $mobile-width-max) {
+      background-image: url("../img/goods-accessories-mobile@1x.png");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/goods-accessories-mobile@2x.png");
+      }
     }
   }
 }

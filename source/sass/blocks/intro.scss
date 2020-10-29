@@ -1,14 +1,54 @@
 .intro {
   background-color: #1b2d37;
-  background-image: url("../img/banner.png");
+  background-image: url("../img/bg-banner-desktop@1x.png");
+  background-size: cover;
   min-width: 320px;
   overflow: hidden;
 
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-banner-desktop@2x.png");
+  }
+
+  @media (max-width: $tablet-width-max) {
+    background-image: url("../img/bg-banner-tablet@1x.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-banner-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    background-image: url("../img/bg-banner-mobile@1x.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-banner-mobile@2x.png");
+    }
+  }
+
   &--main {
     background-color: #ffffff;
-    background-image: url("../img/bg-triangle.png");
-    background-size: 100%;
-
+    background-image: url("../img/bg-triangle-desktop@1x.png");
+    background-size: cover;
     padding: 110px 0;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-triangle-desktop@2x.png");
+    }
+
+    @media (max-width: $tablet-width-max) {
+      background-image: url("../img/bg-triangle-tablet@1x.png");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-triangle-tablet@2x.png");
+      }
+    }
+
+    @media (max-width: $mobile-width-max) {
+      background-image: url("../img/bg-triangle-mobile@1x.png");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-triangle-mobile@2x.png");
+      }
+    }
   }
 }
