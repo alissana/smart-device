@@ -62,15 +62,14 @@
 }
 
 .footer-nav__item-link {
-  color: #1b2d37;
+  color: rgba(27, 45, 55, 0.5);
   font-size: 15px;
   line-height: 25px;
-  opacity: 0.5;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    opacity: 1;
+    color: rgb(27, 45, 55);
   }
 
   &:active {

@@ -1,6 +1,5 @@
 .copyright {
   display: flex;
-  justify-content: space-between;
   position: relative;
 
   &::before {
@@ -44,6 +43,18 @@
     &--date {
       display: none;
     }
+  }
+
+  &--rights {
+    margin-right: 74px;
+  }
+
+  &--date {
+    margin-right: 140px;
+  }
+
+  &--confidentialy {
+    margin-right: 404px;
   }
 }
 
