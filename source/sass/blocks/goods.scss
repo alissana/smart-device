@@ -1,7 +1,7 @@
 .goods {
   background-color: #1b2d37;
   background-image: none;
-  padding: 88px 0 128px;
+  padding: 88px 0 98px;
 
   @media (max-width: $tablet-width-max) {
     padding: 50px 0 32px;
@@ -49,6 +49,7 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 30px;
   margin-right: 30px;
   min-height: 620px;
   position: relative;
