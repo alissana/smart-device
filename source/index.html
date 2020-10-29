@@ -146,7 +146,7 @@
               </div>
               <div class="form__contacts-wrapper">
                 <label for="form-phone">Телефон</label>
-                <input type="tel" name="your-phone" id="form-phone" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" placeholder="Телефон" required>
+                <input type="tel" name="your-phone" id="form-phone" pattern="([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон" required>
               </div>
             </div>
             <div class="form__question">
@@ -272,7 +272,7 @@
         </div>
         <div class="form__contacts-wrapper form__contacts-wrapper--modal">
           <label for="formphone">Телефон</label>
-          <input type="tel" name="your-phone" id="formphone" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" placeholder="Телефон" required>
+          <input type="tel" name="your-phone" id="formphone" pattern="([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон" required>
         </div>
       </div>
       <div class="form__question">
@@ -290,8 +290,6 @@
     </form>
   </section>
   <div class="modal-overlay"></div>
-  <script src="js/accordion.js"></script>
-  <script src="js/phone-mask.js"></script>
-  <script src="js/modal.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

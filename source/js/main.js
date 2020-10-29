@@ -1,5 +1,25 @@
 'use strict';
 
+/* Аккордеон */
+
+var mql = window.matchMedia('(max-width: 767px)');
+
+if (mql.matches) {
+  var acc = document.querySelectorAll('.accordion');
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener('click', function (evt) {
+      evt.currentTarget.classList.toggle('active');
+
+      var panel = evt.currentTarget.nextElementSibling;
+      panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
+    });
+  }
+}
+
+/* Модальное окно */
+
 function documentReady() {
   var link = document.querySelector('.page-header__link');
   var popup = document.querySelector('.modal');
@@ -65,4 +85,47 @@ function documentReady() {
   });
 }
 
+/* Маска для телефона */
+
 document.addEventListener('DOMContentLoaded', documentReady);
+
+var inp = document.querySelectorAll('[name=your-phone]');
+var j = 0;
+var old = 0;
+
+for (j = 0; j < inp.length; j++) {
+  inp[j].addEventListener('click', function (evt) {
+    evt.currentTarget.value = '+7';
+  });
+
+  inp[j].addEventListener('keydown', function (evt) {
+    var curLen = evt.currentTarget.value.length;
+
+    if (curLen < old) {
+      old--;
+      return;
+    }
+
+    if (curLen === 2) {
+      evt.currentTarget.value = evt.currentTarget.value + '(';
+    }
+
+    if (curLen === 6) {
+      evt.currentTarget.value = evt.currentTarget.value + ')-';
+    }
+
+    if (curLen === 11) {
+      evt.currentTarget.value = evt.currentTarget.value + '-';
+    }
+
+    if (curLen === 14) {
+      evt.currentTarget.value = evt.currentTarget.value + '-';
+    }
+
+    if (curLen > 16) {
+      evt.currentTarget.value = evt.currentTarget.value.substring(0, evt.currentTarget.value.length - 1);
+    }
+
+    old++;
+  });
+}
