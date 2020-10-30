@@ -29,11 +29,10 @@
 }
 
 .copyright__item {
-  color: #1b2d37;
+  color: rgba(27, 45, 55, 0.5);
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
-  opacity: 0.5;
   text-transform: uppercase;
 
   @media (max-width: $tablet-width-max) {
@@ -64,12 +63,12 @@
 }
 
 .copyright__item-link {
-  color: #1b2d37;
+  color: rgba(27, 45, 55, 0.5);
   text-decoration: none;
 
   &:hover,
   &:focus {
-    opacity: 1;
+    color: #1b2d37;
   }
 
   &:active {
