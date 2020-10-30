@@ -98,6 +98,10 @@ for (j = 0; j < inp.length; j++) {
     evt.currentTarget.value = '+7';
   });
 
+  inp[j].addEventListener('keyup', function (e) {
+    e.currentTarget.value = e.currentTarget.value.replace(/[^\d+()-]/g, '');
+  });
+
   inp[j].addEventListener('keydown', function (evt) {
     var curLen = evt.currentTarget.value.length;
 
