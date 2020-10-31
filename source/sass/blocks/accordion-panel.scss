@@ -1,0 +1,6 @@
+.accordion-panel {
+  @media (max-width: $mobile-width-max) {
+    display: none;
+    overflow: hidden;
+  }
+}

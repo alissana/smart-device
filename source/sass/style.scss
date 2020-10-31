@@ -1,10 +1,10 @@
 @import "variables";
 @import "mixin";
-
 @import "fonts";
 @import "normalize";
 @import "scaffolding";
 @import "blocks/accordion";
+@import "blocks/accordion-panel";
 @import "blocks/advantages";
 @import "blocks/banner";
 @import "blocks/button";
@@ -20,6 +20,7 @@
 @import "blocks/logo";
 @import "blocks/modal";
 @import "blocks/modal-overlay";
+@import "blocks/modal-show";
 @import "blocks/page-header";
 @import "blocks/page-footer";
 @import "blocks/social";

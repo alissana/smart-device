@@ -3,16 +3,7 @@
   display: none;
   padding: 33px 40px;
   position: fixed;
-  width: 490px
-}
-
-.modal-show {
-  display: block;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 15;
+  width: 490px;
 }
 
 .modal__close-button {
