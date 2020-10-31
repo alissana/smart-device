@@ -2,12 +2,17 @@
   @include no-list;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 15px;
   margin-top: 54px;
   width: 127px;
 
   @media (max-width: $tablet-width-max) {
+    margin-right: -15px;
     margin-top: 0;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-left: 15px;
+    margin-right: 0;
   }
 }
 
