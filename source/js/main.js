@@ -29,6 +29,7 @@ function documentReady() {
   var name = popup.querySelector('[name=your-name]');
   var phone = popup.querySelector('[name=your-phone]');
   var question = popup.querySelector('[name=yourquestion]');
+  var html = document.documentElement;
 
   var isStorageSupport = true;
   var storage;
@@ -43,6 +44,7 @@ function documentReady() {
     evt.preventDefault();
     popupOverlay.classList.add('modal-overlay--show');
     popup.classList.add('modal-show');
+    html.classList.add('page-overlay');
     if (storage) {
       name.value = storage;
       phone.focus();
@@ -57,6 +59,7 @@ function documentReady() {
     evt.preventDefault();
     popupOverlay.classList.remove('modal-overlay--show');
     popup.classList.remove('modal-show');
+    html.classList.remove('page-overlay');
   });
 
   form.addEventListener('submit', function (evt) {

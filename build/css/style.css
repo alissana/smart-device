@@ -17,14 +17,14 @@
   font-display: swap;
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptmono.woff2") format("woff2"), url("../../fonts/ptmono.woff") format("woff"); }
+  src: url("../fonts/ptmono.woff2") format("woff2"), url("../fonts/ptmono.woff") format("woff"); }
 
 @font-face {
   font-family: "PT Mono";
   font-display: swap;
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptmonobold.woff2") format("woff2"), url("../../fonts/ptmonobold.woff") format("woff"); }
+  src: url("../fonts/ptmonobold.woff2") format("woff2"), url("../fonts/ptmonobold.woff") format("woff"); }
 
 /*stylelint-disable*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1709,6 +1709,9 @@ img {
       .page-footer__wrapper-tablet::after {
         top: auto;
         bottom: 0; } }
+
+.page-overlay {
+  overflow: hidden; }
 
 .social__list {
   list-style: none;
