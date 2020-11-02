@@ -83,10 +83,12 @@
     padding: 16px;
     width: 100%;
 
+    &:hover,
     &:focus,
     &:active {
       border: 1px solid #ffffff;
       outline: none;
+      padding: 15px;
     }
 
     &::placeholder {

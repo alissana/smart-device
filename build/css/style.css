@@ -1093,11 +1093,13 @@ img {
   font-size: 16px;
   padding: 16px;
   width: 100%; }
-  .form input:focus, .form input:active,
+  .form input:hover, .form input:focus, .form input:active,
+  .form textarea:hover,
   .form textarea:focus,
   .form textarea:active {
     border: 1px solid #ffffff;
-    outline: none; }
+    outline: none;
+    padding: 15px; }
   .form input::-webkit-input-placeholder,
   .form textarea::-webkit-input-placeholder {
     color: #ffffff; }
