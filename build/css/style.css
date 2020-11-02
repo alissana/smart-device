@@ -427,7 +427,7 @@ img {
     margin-right: 30px; }
   .advantages__item:hover {
     background-color: #00b2ff; }
-  .advantages__item:hover h4,
+  .advantages__item:hover h3,
   .advantages__item:hover p {
     color: #ffffff; }
   .advantages__item:hover svg {
@@ -442,7 +442,7 @@ img {
       min-height: 244px;
       width: 100%; } }
 
-.advantages__item h4 {
+.advantages__item h3 {
   color: #00b2ff;
   font-family: "Roboto Condensed", arial, tahoma, sans-serif;
   font-weight: normal;
@@ -453,10 +453,10 @@ img {
   padding: 0;
   position: relative; }
   @media (max-width: 1023px) {
-    .advantages__item h4 {
+    .advantages__item h3 {
       margin-bottom: 10px; } }
   @media (max-width: 767px) {
-    .advantages__item h4 {
+    .advantages__item h3 {
       font-size: 20px;
       line-height: 28px;
       margin-bottom: 8px; } }
@@ -689,7 +689,7 @@ img {
       margin-top: 38px;
       padding-left: 0; } }
 
-.company h3 {
+.company h2 {
   color: #666666;
   font-family: "Roboto Condensed", arial, tahoma, sans-serif;
   font-weight: normal;
@@ -699,12 +699,12 @@ img {
   margin-bottom: 20px;
   padding: 0; }
   @media (max-width: 1023px) {
-    .company h3 {
+    .company h2 {
       font-size: 32px;
       line-height: 45px;
       margin-bottom: 24px; } }
   @media (max-width: 767px) {
-    .company h3 {
+    .company h2 {
       font-size: 28px;
       line-height: 39px; } }
 
@@ -1333,7 +1333,7 @@ img {
   .goods__item-link:hover, .goods__item-link:focus {
     background-color: rgba(255, 255, 255, 0.5); }
 
-.goods h4 {
+.goods h3 {
   color: #ffffff;
   display: block;
   font-family: "Roboto Condensed", arial, tahoma, sans-serif;
@@ -1346,12 +1346,12 @@ img {
   padding-left: 43px;
   padding-top: 50px; }
   @media (max-width: 1023px) {
-    .goods h4 {
+    .goods h3 {
       min-height: 256px;
       padding-left: 43px;
       padding-top: 40px; } }
   @media (max-width: 767px) {
-    .goods h4 {
+    .goods h3 {
       min-height: 290px;
       padding-left: 34px;
       padding-top: 20px; } }
@@ -1380,7 +1380,7 @@ img {
           -ms-flex-pack: center;
               justify-content: center; } }
 
-.questions h3 {
+.questions h2 {
   color: #ffffff;
   font-family: "Roboto Condensed", arial, tahoma, sans-serif;
   font-weight: normal;
@@ -1390,12 +1390,12 @@ img {
   margin-bottom: 8px;
   padding: 0; }
   @media (max-width: 1023px) {
-    .questions h3 {
+    .questions h2 {
       font-size: 32px;
       line-height: 45px;
       margin-bottom: 17px; } }
   @media (max-width: 767px) {
-    .questions h3 {
+    .questions h2 {
       font-size: 28px;
       line-height: 39px;
       margin-bottom: 14px; } }
