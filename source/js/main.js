@@ -80,6 +80,7 @@ function documentReady() {
         evt.preventDefault();
         popupOverlay.classList.remove('modal-overlay--show');
         popup.classList.remove('modal-show');
+        html.classList.remove('page-overlay');
       }
     }
   });
