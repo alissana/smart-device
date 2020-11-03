@@ -142,15 +142,16 @@
           <form class="questions__form form" action="http://echo.htmlacademy.ru" method="post">
             <div class="form__contacts">
               <div class="form__contacts-wrapper">
+                <label for="form-name" class="visually-hidden">Имя</label>
                 <input id="form-name" type="text" name="your-name" placeholder="Имя" required>
-                <label for="form-name">Имя</label>
               </div>
               <div class="form__contacts-wrapper">
+                <label for="form-phone" class="visually-hidden">Телефон</label>
                 <input id="form-phone" type="tel" name="your-phone" placeholder="Телефон" required>
-                <label for="form-phone">Телефон</label>
               </div>
             </div>
             <div class="form__question">
+              <label for="question-comment" class="visually-hidden">Ваш вопрос</label>
               <textarea id="question-comment" name="your-question" placeholder="Ваш вопрос" rows="7" required></textarea>
             </div>
             <div class="form__button-wrapper">
@@ -216,38 +217,42 @@
         </div>
         <div class="page-footer__wrapper-tablet">
           <div class="page-footer__nav footer-nav">
-            <h4 class="footer-nav__title accordion">Разделы сайта</h4>
-            <ul class="footer-nav__list accordion-panel accordion-panel--nojs">
-              <li class="footer-nav__item">
-                <a class="footer-nav__item-link" href="#">О компании</a>
-              </li>
-              <li class="footer-nav__item">
-                <a class="footer-nav__item-link" href="#">Комплектующие</a>
-              </li>
-              <li class="footer-nav__item">
-                <a class="footer-nav__item-link" href="#">Продукты</a>
-              </li>
-              <li class="footer-nav__item">
-                <a class="footer-nav__item-link" href="#">Доставка</a>
-              </li>
-              <li class="footer-nav__item">
-                <a class="footer-nav__item-link" href="#">Производство печатных плат</a>
-              </li>
-              <li class="footer-nav__item">
-                <a class="footer-nav__item-link" href="#">Контакты</a>
-              </li>
-              <li class="footer-nav__item">
-                <a class="footer-nav__item-link" href="#">Монтаж печатных плат</a>
-              </li>
-            </ul>
+            <div class="accordion">
+              <h4 class="footer-nav__title accordion__title js-toggle-accordion">Разделы сайта</h4>
+              <ul class="footer-nav__list accordion-panel">
+                <li class="footer-nav__item">
+                  <a class="footer-nav__item-link" href="#">О компании</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__item-link" href="#">Комплектующие</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__item-link" href="#">Продукты</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__item-link" href="#">Доставка</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__item-link" href="#">Производство печатных плат</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__item-link" href="#">Контакты</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__item-link" href="#">Монтаж печатных плат</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="page-footer__contacts contacts">
-            <h4 class="contacts__title accordion">Наш офис</h4>
-            <div class="contacts__description accordion-panel accordion-panel--nojs">
-              <p>г. Мытищи, Олимпийский проспект,&nbsp;д.10</p>
-              <a class="contacts__link" href="tel:+74955894050">+7&nbsp;(495)&nbsp;589&#8209;40&#8209;50</a><br>
-              <a class="contacts__link" href="tel:+79250038767">+7&nbsp;(925)&nbsp;003&#8209;87&#8209;67</a><br>
-              <a class="contacts__link" href="tel:+792608079">+7&nbsp;(926)&nbsp;926&#8209;080&#8209;79</a>
+            <div class="accordion">
+              <h4 class="contacts__title accordion__title js-toggle-accordion">Наш офис</h4>
+              <div class="contacts__description accordion-panel">
+                <p>г. Мытищи, Олимпийский проспект,&nbsp;д.10</p>
+                <a class="contacts__link" href="tel:+74955894050">+7&nbsp;(495)&nbsp;589&#8209;40&#8209;50</a><br>
+                <a class="contacts__link" href="tel:+79250038767">+7&nbsp;(925)&nbsp;003&#8209;87&#8209;67</a><br>
+                <a class="contacts__link" href="tel:+792608079">+7&nbsp;(926)&nbsp;926&#8209;080&#8209;79</a>
+              </div>
             </div>
           </div>
         </div>
@@ -261,23 +266,21 @@
     </div>
   </footer>
   <section class="questions modal">
-    <button class="modal__close-button" type="button">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
     <h2>Закажите звонок</h2>
     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="questions__form form modal-form" action="http://echo.htmlacademy.ru" method="post">
       <div class="form__contacts form__contacts--modal">
         <div class="form__contacts-wrapper form__contacts-wrapper--modal">
-          <label for="formname">Имя:</label>
+          <label for="formname" class="visually-hidden">Имя:</label>
           <input id="formname" type="text" name="your-name" placeholder="Имя" required>
         </div>
         <div class="form__contacts-wrapper form__contacts-wrapper--modal">
-          <label for="formphone">Телефон</label>
+          <label for="formphone" class="visually-hidden">Телефон</label>
           <input id="formphone" type="tel" name="your-phone" placeholder="Телефон" required>
         </div>
       </div>
       <div class="form__question">
+        <label for="questioncomment" class="visually-hidden">Ваш вопрос</label>
         <textarea id="questioncomment" name="yourquestion" placeholder="Ваш вопрос" rows="7" required></textarea>
       </div>
       <div class="form__button-wrapper form__button-wrapper--modal">
@@ -290,6 +293,9 @@
         </div>
       </div>
     </form>
+    <button class="modal__close-button" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </section>
   <div class="modal-overlay"></div>
   <script src="js/main.js"></script>

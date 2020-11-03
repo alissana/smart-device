@@ -369,10 +369,10 @@ img {
   width: 1px; }
 
 @media (max-width: 767px) {
-  .accordion {
+  .accordion__title {
     cursor: pointer;
     position: relative; }
-    .accordion::after {
+    .accordion__title::after {
       content: "";
       background-image: url("../img/icon-plus.svg");
       background-position: 50% 50%;
@@ -382,10 +382,10 @@ img {
       top: 0;
       height: 16px;
       width: 16px; }
-    .accordion.active::after {
+    .active .accordion__title::after {
       background-image: url("../img/icon-minus.svg"); } }
 
-.no-js .accordion::after {
+.no-js .accordion__title::after {
   background-image: url("../img/icon-minus.svg"); }
 
 @media (max-width: 767px) {
@@ -394,11 +394,8 @@ img {
     overflow: hidden; } }
 
 @media (max-width: 767px) {
-  .no-js .accordion-panel {
-    display: block; } }
-
-@media (max-width: 767px) {
-  .accordion-panel__open {
+  .no-js .accordion-panel,
+  .active .accordion-panel {
     display: block; } }
 
 .advantages__list {
@@ -1058,9 +1055,6 @@ img {
   .form__contacts-wrapper--modal {
     width: 100%; }
 
-.form__contacts-wrapper label {
-  display: none; }
-
 .form__button-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1095,10 +1089,14 @@ img {
 .form textarea {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
+  border-radius: 0;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
   color: #ffffff;
   font-size: 16px;
   padding: 16px;
-  width: 100%; }
+  width: 100%;
+  -webkit-appearance: none; }
   .form input:hover, .form input:focus, .form input:active,
   .form textarea:hover,
   .form textarea:focus,
@@ -1544,7 +1542,8 @@ img {
   top: 20px;
   width: 17px; }
   .modal__close-button:hover, .modal__close-button:focus, .modal__close-button:active {
-    border: 1px solid #ffffff; }
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
 
 .modal-overlay {
   background-color: rgba(0, 0, 0, 0.5);

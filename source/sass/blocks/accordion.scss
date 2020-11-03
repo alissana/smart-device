@@ -1,4 +1,4 @@
-.accordion {
+.accordion__title {
   @media (max-width: $mobile-width-max) {
     cursor: pointer;
     position: relative;
@@ -15,12 +15,12 @@
       width: 16px;
     }
 
-    &.active::after {
+    .active &::after {
       background-image: url("../img/icon-minus.svg");
     }
   }
 }
 
-.no-js .accordion::after {
+.no-js .accordion__title::after {
   background-image: url("../img/icon-minus.svg");
 }
