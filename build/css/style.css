@@ -1174,7 +1174,12 @@ img {
 
 .form input[type="checkbox"]:checked,
 .form input[type="checkbox"]:not(:checked) {
-  display: none; }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0); }
 
 .form input[type="checkbox"] + label {
   color: rgba(255, 255, 255, 0.8);
@@ -1195,6 +1200,7 @@ img {
 .form input[type="checkbox"] + label::before {
   content: "";
   border: 1px solid #ffffff;
+  opacity: 0.5;
   position: absolute;
   left: 8px;
   top: 4px;
@@ -1203,15 +1209,20 @@ img {
   @media (max-width: 1023px) {
     .form input[type="checkbox"] + label::before {
       left: 10px;
-      top: 0px; } }
+      top: 0; } }
   @media (max-width: 767px) {
     .form input[type="checkbox"] + label::before {
       left: 0; } }
 
+.form input[type="checkbox"]:hover + label::before,
+.form input[type="checkbox"]:focus + label::before {
+  opacity: 1; }
+
 .form input[type="checkbox"]:checked + label::before {
   background-image: url("../img/icon-checkbox-ckecked.svg");
   background-position: 50% 50%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  opacity: 1; }
 
 .form__note {
   display: -webkit-box;
@@ -1405,6 +1416,7 @@ img {
 
 .questions {
   background-color: #00b2ff;
+  overflow: hidden;
   padding: 92px 0; }
   @media (max-width: 1023px) {
     .questions {

@@ -136,7 +136,12 @@
 
   input[type="checkbox"]:checked,
   input[type="checkbox"]:not(:checked) {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0 ;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
   }
 
   input[type="checkbox"] + label {
@@ -165,6 +170,7 @@
   input[type="checkbox"] + label::before {
     content: "";
     border: 1px solid #ffffff;
+    opacity: 0.5;
     position: absolute;
     left: 8px;
     top: 4px;
@@ -173,7 +179,7 @@
 
     @media (max-width: $tablet-width-max) {
       left: 10px;
-      top: 0px;
+      top: 0;
     }
 
     @media (max-width: $mobile-width-max) {
@@ -182,10 +188,16 @@
 
   }
 
+  input[type="checkbox"]:hover + label::before,
+  input[type="checkbox"]:focus + label::before {
+    opacity: 1;
+  }
+
   input[type="checkbox"]:checked + label::before {
     background-image: url("../img/icon-checkbox-ckecked.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    opacity: 1;
   }
 }
 .form__note {
