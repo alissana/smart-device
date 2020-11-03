@@ -15,7 +15,7 @@
   border-left: 3px solid #00b2ff;
   margin-bottom: 30px;
   min-height: 300px;
-  padding: 40px 45px 65px;
+  padding: 40px 44px 65px;
   width: calc((100% - 30px) / 2);
 
   &:nth-child(2n+1) {
@@ -36,13 +36,14 @@
   }
 
   @media (max-width: $tablet-width-max) {
-    min-height: 232px;
-    padding: 22px;
+    min-height: 235px;
+    padding: 22px 20px 20px 24px;
   }
 
   @media (max-width: $mobile-width-max) {
     margin-bottom: 20px;
     min-height: 244px;
+    padding: 22px;
     width: 100%;
   }
 }
@@ -65,7 +66,6 @@
   @media (max-width: $mobile-width-max) {
     font-size: 20px;
     line-height: 28px;
-    margin-bottom: 8px;
   }
 }
 
@@ -86,6 +86,6 @@
   }
 
   @media (max-width: $mobile-width-max) {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 }

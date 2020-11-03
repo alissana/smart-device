@@ -1,6 +1,6 @@
 .logo {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .logo__img {
@@ -13,6 +13,7 @@
 
   &--footer {
     height: 52px;
+    margin-right: 14px;
     width: 52px;
   }
 }

@@ -4,7 +4,7 @@
   padding: 88px 0 98px;
 
   @media (max-width: $tablet-width-max) {
-    padding: 50px 0 32px;
+    padding: 48px 0 30px;
   }
 
   @media (max-width: $mobile-width-max) {
@@ -31,7 +31,7 @@
     font-size: 28px;
     line-height: 39px;
     padding-left: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 }
 
@@ -55,7 +55,7 @@
   position: relative;
   width: calc((100% - 60px) / 3);
 
-  &:last-child {
+  &:nth-child(3n) {
     margin-right: 0;
   }
 
@@ -190,13 +190,13 @@
   line-height: 30px;
   margin: 0;
   max-width: 200px;
-  padding-left: 43px;
-  padding-top: 50px;
+  padding-left: 46px;
+  padding-top: 52px;
 
   @media (max-width: $tablet-width-max) {
     min-height: 256px;
-    padding-left: 43px;
-    padding-top: 40px;
+    padding-left: 45px;
+    padding-top: 38px;
   }
 
   @media (max-width: $mobile-width-max) {

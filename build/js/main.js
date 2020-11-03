@@ -1,5 +1,7 @@
 'use strict';
 
+document.documentElement.classList.remove('no-js');
+
 /* Аккордеон */
 
 var mql = window.matchMedia('(max-width: 767px)');
@@ -57,6 +59,7 @@ function documentReady() {
 
   close.addEventListener('click', function (evt) {
     evt.preventDefault();
+    close.focus();
     popupOverlay.classList.remove('modal-overlay--show');
     popup.classList.remove('modal-show');
     html.classList.remove('page-overlay');
@@ -80,6 +83,7 @@ function documentReady() {
         evt.preventDefault();
         popupOverlay.classList.remove('modal-overlay--show');
         popup.classList.remove('modal-show');
+        html.classList.remove('page-overlay');
       }
     }
   });

@@ -3,4 +3,16 @@
     display: none;
     overflow: hidden;
   }
+
+  .no-js & {
+    @media (max-width: $mobile-width-max) {
+      display: block;
+    }
+  }
+}
+
+.accordion-panel__open {
+  @media (max-width: $mobile-width-max) {
+    display: block;
+  }
 }

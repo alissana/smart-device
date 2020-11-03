@@ -1,10 +1,9 @@
 .contacts {
-  padding-left: 160px;
-  width: 50%;
+  width: 333px;
 
   @media (max-width: $tablet-width-max) {
     padding-left: 0;
-    width: 45%;
+    width: 48%;
   }
 
   @media (max-width: $mobile-width-max) {
@@ -20,7 +19,7 @@
   font-size: 15px;
   letter-spacing: 0.05em;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
   padding: 0;
   position: relative;
   text-transform: uppercase;
@@ -57,7 +56,6 @@
 
 .contacts__link {
   color: rgba(27, 45, 55, 0.5);
-  display: block;
   font-size: 15px;
   line-height: 25px;
   text-decoration: none;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,20 +87,20 @@
                 <use xlink:href="#icon-detective"></use>
               </svg>
               <h3>Полная конфиденциальность</h3>
-              <p>По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфеденциальность.</p>
+              <p>По&nbsp;желанию клиента мы обеспечиваем полную конфеденциальность.</p>
             </li>
             <li class="advantages__item">
               <svg class="advantages__icon advantages__icon--personalization" height="35" width="35">
                 <use xlink:href="#icon-tag"></use>
               </svg>
               <h3>Персонализация стоимости</h3>
-              <p>Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.</p>
+              <p>Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
             </li>
           </ul>
         </section>
         <section class="company">
           <h2>О компании</h2>
-          <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.</p>
+          <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
           <p>Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных <span class="company__text-mobile">Дорог&nbsp;</span><span class="company__text-desktop">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
           <a href="#" class="company__link button">Подробнее</a>
         </section>
@@ -120,9 +120,9 @@
               <h3>Монтаж печатных плат</h3>
             </a>
           </li>
-          <li class="goods__item goods__item--plats">
+          <li class="goods__item goods__item--accessories">
             <a href="#" class="goods__item-link">
-              <h3>Производство печатных плат</h3>
+              <h3>Комплектующие для светотехники</h3>
             </a>
           </li>
         </ul>
@@ -142,23 +142,23 @@
           <form class="questions__form form" action="http://echo.htmlacademy.ru" method="post">
             <div class="form__contacts">
               <div class="form__contacts-wrapper">
-                <label for="form-name">Имя<sup>*</sup>:</label>
-                <input type="text" name="your-name" id="form-name" placeholder="Имя" required>
+                <input id="form-name" type="text" name="your-name" placeholder="Имя" required>
+                <label for="form-name">Имя</label>
               </div>
               <div class="form__contacts-wrapper">
+                <input id="form-phone" type="tel" name="your-phone" placeholder="Телефон" required>
                 <label for="form-phone">Телефон</label>
-                <input type="tel" name="your-phone" id="form-phone" placeholder="Телефон" required>
               </div>
             </div>
             <div class="form__question">
-              <textarea name="your-question" id="question-comment" placeholder="Ваш вопрос" rows="7" required></textarea>
+              <textarea id="question-comment" name="your-question" placeholder="Ваш вопрос" rows="7" required></textarea>
             </div>
             <div class="form__button-wrapper">
               <div class="form__button">
                 <button type="submit">Задать вопрос</button>
               </div>
               <div class="form__note">
-                <input type="checkbox" name="agree-check" id="consent" required>
+                <input id="consent" type="checkbox" name="agree-check" required>
                 <label for="consent">Я согласен на обработку персональных данных</label>
               </div>
             </div>
@@ -167,8 +167,9 @@
       </div>
     </section>
   </main>
-  <div class="container">
-    <footer class="page-footer">
+  <footer class="page-footer">
+    <div class="container">
+      <h3 class="visually-hidden">Наши контакты</h3>
       <div class="page-footer__wrapper">
         <div class="page-footer__left-column">
           <a class="page-footer__logo logo">
@@ -178,8 +179,8 @@
               </svg>
             </div>
             <div class="logo__text logo__text--footer">
-              <svg height="45" width="134">
-                <use xlink:href="#icon-logo-name"></use>
+              <svg height="40" width="147">
+                <use xlink:href="#icon-logo-name-footer"></use>
               </svg>
             </div>
           </a>
@@ -216,7 +217,7 @@
         <div class="page-footer__wrapper-tablet">
           <div class="page-footer__nav footer-nav">
             <h4 class="footer-nav__title accordion">Разделы сайта</h4>
-            <ul class="footer-nav__list accordion-panel">
+            <ul class="footer-nav__list accordion-panel accordion-panel--nojs">
               <li class="footer-nav__item">
                 <a class="footer-nav__item-link" href="#">О компании</a>
               </li>
@@ -242,11 +243,11 @@
           </div>
           <div class="page-footer__contacts contacts">
             <h4 class="contacts__title accordion">Наш офис</h4>
-            <div class="contacts__description accordion-panel">
-              <p>г. Мытищи, Олимпийский проспект, д.10</p>
-              <a class="contacts__link" href="tel:+74955894050">+7&nbsp;(495)&nbsp;589-40-50</a>
-              <a class="contacts__link" href="tel:+79250038767">+7&nbsp;(925)&nbsp;003-87-67</a>
-              <a class="contacts__link" href="tel:+792608079">+7&nbsp;(926)&nbsp;926-080-79</a>
+            <div class="contacts__description accordion-panel accordion-panel--nojs">
+              <p>г. Мытищи, Олимпийский проспект,&nbsp;д.10</p>
+              <a class="contacts__link" href="tel:+74955894050">+7&nbsp;(495)&nbsp;589&#8209;40&#8209;50</a>
+              <a class="contacts__link" href="tel:+79250038767">+7&nbsp;(925)&nbsp;003&#8209;87&#8209;67</a>
+              <a class="contacts__link" href="tel:+792608079">+7&nbsp;(926)&nbsp;926&#8209;080&#8209;79</a>
             </div>
           </div>
         </div>
@@ -257,8 +258,8 @@
         <p class="copyright__item copyright__item--confidentialy"><a class="copyright__item-link" href="#">Условия конфиденциальности</a></p>
         <p class="copyright__item">Developed by <a class="copyright__item-link" href="#">wow studio</a></p>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
   <section class="questions modal">
     <button class="modal__close-button" type="button">
       <span class="visually-hidden">Закрыть</span>
@@ -269,22 +270,22 @@
       <div class="form__contacts form__contacts--modal">
         <div class="form__contacts-wrapper form__contacts-wrapper--modal">
           <label for="formname">Имя:</label>
-          <input type="text" name="your-name" id="formname" placeholder="Имя" required>
+          <input id="formname" type="text" name="your-name" placeholder="Имя" required>
         </div>
         <div class="form__contacts-wrapper form__contacts-wrapper--modal">
           <label for="formphone">Телефон</label>
-          <input type="tel" name="your-phone" id="formphone" placeholder="Телефон" required>
+          <input id="formphone" type="tel" name="your-phone" placeholder="Телефон" required>
         </div>
       </div>
       <div class="form__question">
-        <textarea name="yourquestion" id="questioncomment" placeholder="Ваш вопрос" rows="7" required></textarea>
+        <textarea id="questioncomment" name="yourquestion" placeholder="Ваш вопрос" rows="7" required></textarea>
       </div>
       <div class="form__button-wrapper form__button-wrapper--modal">
         <div class="form__button form__button--modal">
           <button type="submit">Отправить</button>
         </div>
         <div class="form__note form__note--modal">
-          <input type="checkbox" id="agree" name="agree" required>
+          <input type="checkbox" id="agree" name="agree" required tabindex="0">
           <label for="agree">Я согласен на обработку персональных данных</label>
         </div>
       </div>
