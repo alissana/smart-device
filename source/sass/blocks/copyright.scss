@@ -56,6 +56,10 @@
   &--confidentialy {
     margin-right: 404px;
 
+    @media (max-width: 1105px) {
+      margin-right: 300px;
+    }
+
     @media (max-width: $tablet-width-max) {
       margin-right: 0;
       margin-left: 2px;

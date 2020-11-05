@@ -7,26 +7,6 @@ document.documentElement.classList.remove('no-js');
 var mql = window.matchMedia('(max-width: 767px)');
 
 if (mql.matches) {
-  // var acc = document.querySelectorAll('.accordion');
-  // var accPanel = document.querySelectorAll('.accordion-panel');
-  // var i;
-  // var q;
-
-  // for (i = 0; i < acc.length; i++) {
-  //   acc[i].addEventListener('click', function (evt) {
-  //     for (q = 0; q < acc.length; q++) {
-  //       if (q !== i) {
-  //         acc[q].classList.remove('active');
-  //         accPanel[q].style.display = (accPanel[q].style.display === 'none');
-  //       }
-  //     }
-  //     evt.currentTarget.classList.toggle('active');
-
-  //     var panel = evt.currentTarget.nextElementSibling;
-  //     panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
-  //   });
-  // }
-
   var acc = document.querySelectorAll('.js-toggle-accordion');
 
   for (var i = 0; i < acc.length; i++) {
@@ -56,6 +36,7 @@ function documentReady() {
   var name = popup.querySelector('[name=your-name]');
   var phone = popup.querySelector('[name=your-phone]');
   var question = popup.querySelector('[name=yourquestion]');
+  var html = document.documentElement;
 
   var isStorageSupport = true;
   var storage;
@@ -70,6 +51,7 @@ function documentReady() {
     evt.preventDefault();
     popupOverlay.classList.add('modal-overlay--show');
     popup.classList.add('modal-show');
+    html.classList.add('page-overlay');
     if (storage) {
       name.value = storage;
       phone.focus();
@@ -85,6 +67,7 @@ function documentReady() {
     close.focus();
     popupOverlay.classList.remove('modal-overlay--show');
     popup.classList.remove('modal-show');
+    html.classList.remove('page-overlay');
   });
 
   popupOverlay.addEventListener('click', function (evt) {
@@ -96,7 +79,6 @@ function documentReady() {
   form.addEventListener('submit', function (evt) {
     if (!name.value || !phone.value || !question.value) {
       evt.preventDefault();
-      popup.classList.remove('modal-error');
       popup.offsetWidth = popup.offsetWidth;
     } else {
       if (isStorageSupport) {
@@ -111,6 +93,7 @@ function documentReady() {
         evt.preventDefault();
         popupOverlay.classList.remove('modal-overlay--show');
         popup.classList.remove('modal-show');
+        html.classList.remove('page-overlay');
       }
     }
   });
